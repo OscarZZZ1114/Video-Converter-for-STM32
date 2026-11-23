@@ -50,7 +50,8 @@ python video_converter.py input.mp4 video.c 5
 ### 3. 将生成的video.c添加到STM32工程
 
 1. 将 `video.c` 复制到STM32工程的 `Core/Src` 目录
-2. 在工程中编译包含该文件
+2. 将对应的驱动文件复制到Src与Inc目录，并修改CmakeList确保编译时包含font.h,font.c,oled.h,oled.c
+3. 在工程中编译包含video.c文件
 
 ### 4. 在STM32代码中使用
 
